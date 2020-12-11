@@ -423,7 +423,7 @@ if test "$build_python" = "yes" -a "$build_mixer_pymodules" = "yes"; then
   pythonlibs0=
   pythoninc0=
   if test "$build_python2" != "yes"; then
-    pythonlibs0=$(python3-config --libs --embed 2> /dev/null)
+    pythonlibs0=$(python3-config --libs 2> /dev/null)
     if test -z "$pythonlibs0"; then
       pythonlibs0=$(python3-config --libs)
     fi
